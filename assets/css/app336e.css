@@ -1,0 +1,400 @@
+﻿.toast-message {
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}
+
+.toast-message-icon,
+.toast-messages {
+    display: -ms-flexbox;
+    display: flex
+}
+
+.toast-message {
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.toast-message {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease
+}
+
+.toast-message__close {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer
+}
+
+.fireflies {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none
+}
+
+.toast-message_hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none
+}
+
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icons/icomoonacd0.eot?8vdrqo");
+    src: url("../fonts/icons/icomoonacd0.eot?8vdrqo#iefix") format("embedded-opentype"), url("../fonts/icons/icomoonacd0.ttf?8vdrqo") format("truetype"), url("../fonts/icons/icomoonacd0.woff?8vdrqo") format("woff"), url("../fonts/icons/icomoonacd0.svg?8vdrqo#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block
+}
+
+[class^=icon-],
+[class*=" icon-"] {
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-warning:before {
+    content: ""
+}
+
+.icon-bookmark:before {
+    content: ""
+}
+
+.icon-copy:before {
+    content: ""
+}
+
+.icon-lightning:before {
+    content: ""
+}
+
+.icon-send:before {
+    content: ""
+}
+
+.icon-arrow-down-short:before {
+    content: ""
+}
+
+.icon-location:before {
+    content: ""
+}
+
+.icon-flag:before {
+    content: ""
+}
+
+.icon-calendar:before {
+    content: ""
+}
+
+.icon-play:before {
+    content: ""
+}
+
+.icon-gift-filled:before {
+    content: ""
+}
+
+.icon-search:before {
+    content: ""
+}
+
+.icon-check:before {
+    content: ""
+}
+
+.icon-sparkle:before {
+    content: ""
+}
+
+.icon-tablet:before {
+    content: ""
+}
+
+.icon-user:before {
+    content: ""
+}
+
+.icon-web:before {
+    content: ""
+}
+
+.icon-mobile:before {
+    content: ""
+}
+
+.icon-fb:before {
+    content: ""
+}
+
+.icon-gift:before {
+    content: ""
+}
+
+.icon-instagram:before {
+    content: ""
+}
+
+.icon-linkedin:before {
+    content: ""
+}
+
+.icon-chevron-left:before {
+    content: ""
+}
+
+.icon-chevron-right:before {
+    content: ""
+}
+
+.icon-arrow-left:before {
+    content: ""
+}
+
+.icon-arrow-right:before {
+    content: ""
+}
+
+.icon-arrow-up:before {
+    content: ""
+}
+
+.icon-chevron-down:before {
+    content: ""
+}
+
+.icon-chevron-up:before {
+    content: ""
+}
+
+.icon-arrow-down:before {
+    content: ""
+}
+
+.toast-messages {
+    position: fixed;
+    bottom: 1.5625rem;
+    left: 50%;
+    text-align: center;
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 105;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap
+}
+
+.toast-message {
+    background: #051435;
+    color: #fff;
+    border-radius: 1.5rem;
+    padding: .5rem 1.5rem .5rem .5rem;
+    max-width: 34.125rem;
+    animation: showToast .5s;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.toast-message_hidden {
+    bottom: 0;
+    -moz-transform: translate(0, 100%);
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%)
+}
+
+.toast-message-icon {
+    margin-right: .625rem;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
+}
+
+.toast-message-icon img {
+    max-width: 2rem
+}
+
+.toast-message__close {
+    margin-left: .5rem;
+    width: 1rem
+}
+
+.toast-message span {
+    line-height: 162%;
+    font-weight: 500;
+    color: inherit;
+    text-align: left
+}
+
+@media(max-width: 767px) {
+    .toast-messages {
+        bottom: 1rem;
+        left: 0;
+        transform: none;
+        width: 100%
+    }
+
+    .toast-message {
+        max-width: calc(100% - 2rem);
+        margin-top: .75rem
+    }
+
+    .toast-message-icon {
+        margin-right: .375rem
+    }
+
+    .toast-message-icon img {
+        max-width: 1.5rem
+    }
+
+    .toast-message span {
+        line-height: 130%
+    }
+}
+
+@keyframes showToast {
+    0% {
+        bottom: 0;
+        -moz-transform: translate(0, 100%);
+        -webkit-transform: translate(0, 100%);
+        transform: translate(0, 100%)
+    }
+
+    100% {
+        bottom: 25px;
+        -moz-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+.swiper-dots__progress {
+    width: 6.875rem;
+    height: .125rem;
+    position: relative
+}
+
+.swiper-dots__progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    z-index: 1
+}
+
+.swiper-dots .slick-dots li {
+    margin: 0;
+    width: auto
+}
+
+.swiper-dots .slick-dots li:not(:last-child) {
+    margin-right: 1.5rem
+}
+
+.swiper-dots .slick-dots .slick-active .swiper-dots__progress::after {
+    animation: timer 3s linear 0s 1 forwards;
+    -webkit-animation: timer 3s linear 0s 1 forwards;
+    -moz-animation: timer 3s linear 0s 1 forwards
+}
+
+.fireflies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: exclusion;
+    z-index: 0;
+    overflow: hidden
+}
+
+.fireflies>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.title-anim>img {
+    width: 2.5rem;
+    animation: spin 2s linear 0s infinite forwards;
+    -webkit-animation: spin 2s linear 0s infinite forwards;
+    -moz-animation: spin 2s linear 0s infinite forwards
+}
+
+.title-anim-vertical>img {
+    width: 2.5rem;
+    animation: spin-vertical 2s linear 0s infinite forwards;
+    -webkit-animation: spin-vertical 2s linear 0s infinite forwards;
+    -moz-animation: spin-vertical 2s linear 0s infinite forwards
+}
+
+@keyframes timer {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+@keyframes spin {
+
+    0%,
+    25% {
+        transform: rotate(45deg)
+    }
+
+    50%,
+    75% {
+        transform: rotate(135deg)
+    }
+
+    100% {
+        transform: rotate(45deg)
+    }
+}
+
+@keyframes spin-vertical {
+
+    0%,
+    25% {
+        transform: rotate(0)
+    }
+
+    50%,
+    75% {
+        transform: rotate(135deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
+
+@media(max-width: 1023px) {
+
+    .title-anim>img,
+    .title-anim-vertical>img {
+        animation: none;
+        -webkit-animation: none;
+        -moz-animation: none
+    }
+}
+
+/*# sourceMappingURL=app.css.map */
